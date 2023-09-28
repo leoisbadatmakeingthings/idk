@@ -1,15 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Fireboy and Watergirl - The Forest Temple on Leo's unblocked games</title>
+     <h1>Fireboy and Watergirl - The Forest Temple</h1>
+        <meta charset='utf8'>
+    </head>
+    <body>
+        <div id='ruffle'></div>
+        <script src='https://leoisbadatmakeingthings.github.io/idk/ruffle.js'></script>
+        <script>
+var swfobject = {};
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Fireboy and Watergirl - The Forest Temple on Leo's unblocked games</title>
-     <h1>Fireboy and Watergirl - The Forest Temple not working</h1>
-</head> 
-<body>
- 
-  <script type="text/javascript" src="swf2js.js"></script>
-<script type="text/javascript">
-    swf2js.load('https://leoisbadatmakeingthings.github.io/idk/Fireboy%20%26%20Watergirl%20-%20The%20Forest%20Temple.swf');
-</script>  
-</body>
+swfobject.embedSWF = function(url, cont, width, height){
+    var ruffle = window.RufflePlayer.newest(),
+        player = Object.assign(document.getElementById(cont).appendChild(ruffle.createPlayer()), {
+            width: width,
+            height: height,
+            style: 'width: ' + width + 'px; height: ' + height + 'px',
+        });
+    
+    player.load({ url: url });
+}
+
+swfobject.embedSWF('https://leoisbadatmakeingthings.github.io/idk/Fireboy%20%26%20Watergirl%20-%20The%20Forest%20Temple.swf', 'ruffle', 500, 500);
+        </script>
+    </body>
 </html>
+
+  
